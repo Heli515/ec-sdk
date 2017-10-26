@@ -65,21 +65,14 @@ The SDK examples were created in the open-source form with the vision of a great
 - [Python3+ sample app/lib](https://github.com/Enterprise-connect/ec-python3) by [avnsri4986](https://github.com/avnsri4986)
 
 ## Release History
-### [v1.2.90_fukuoka](https://github.com/Enterprise-connect/ec-sdk/releases) current
-- Introducing the "Gateway" mode of EC Agent.
-- Add the Service URL as mandatory flag for the gateway.
-- Fix proxy settings. https://github.com/Enterprise-connect/ec-sdk/issues/7
-- Add session information for exceptions. https://github.com/Enterprise-connect/ec-sdk/issues/9
-- System stability updates. Prevent memory deadlock.
-- Improve IP Filter, supporting IPv4/IPv6 in CiDR Net.
-- Allow Loopback access.
-- Add token validation API from the EC Service.
-- Add Usage reporting. usage calculation.
-- Add health port listener.
-- Some bug fixes. https://github.com/Enterprise-connect/ec-sdk/issues/14
-- Docs clean up.
-- Super Connection Auto-Reconnect.
-- Add Debug mode.
-- Add feature option to generating/submitting a CSR.
+### [v1.3.2b-candidate](https://github.com/Enterprise-connect/ec-sdk/releases) current
+ - Fix unlock super_conn memory issue. #41 
+ - Fix interface conversion error whilst RLock. #38 
+ - Fix exception handling error causing deadlock when number of sessions exceeds 50+ #38 #41 
+ - Fix mutex rewrite issue. #38 #41 
+ - Enable/Disable VLAN forwarding based on VLAN flag.
+ - Feature added- VLAN header checking for resource forwarding.
+ - Feature added- VLAN ip/port mapping.
+ - Add flag -shc to secure the health API.
  
 [more](https://github.com/Enterprise-connect/ec-sdk/releases)
